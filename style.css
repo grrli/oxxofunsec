@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  z-index: 2;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: overlay;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 0.8em;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #ffffff;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+}
+
+.text a:hover {
+  opacity: 0.8;
+}
+
+.inform {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inform p {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+  .forweb {
+    display: none;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .showcase,
+  .showcase header {
+    padding: 25px 15px;
+  }
+
+  .text h2,
+  .text h3 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #myVideo,
+  .formobile {
+    display: none;
+  }
+}
