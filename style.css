@@ -116,29 +116,125 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 320px) {
   .forweb {
     display: none;
   }
-
   .logo img {
-    width: 70px;
+    width: 50px;
   }
 
   .showcase,
   .showcase header {
-    padding: 25px 15px;
+    padding: 10px 15px;
+  }
+  .text h2,
+  .text h3 {
+    font-size: 2.5em;
+  }
+
+  .text p {
+    font-size: 0.8em;
+  }
+}
+
+/*--------------------*/
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width: 320px) {
+  .forweb {
+    display: none;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .showcase,
+  .showcase header {
+    padding: 20px 15px;
   }
 
   .text h2,
   .text h3 {
-    font-size: 3em;
+    font-size: 2em;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+}
+/*--------------------*/
+/* smartphones, Android phones, landscape iPhone */
+@media (min-width: 480px) {
+  .forweb {
+    display: none;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .showcase,
+  .showcase header {
+    padding: 25px 20px;
+  }
+
+  .text h2,
+  .text h3 {
+    font-size: 2em;
+  }
+
+  .text p {
+    font-size: 1em;
   }
 }
 
-@media screen and (min-width: 992px) {
+/*--------------------*/
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 801px) {
   #myVideo,
   .formobile {
     display: none;
   }
+  .showcase video {
+    display: block;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+  .showcase,
+  .showcase header {
+    padding: 35px 30px;
+  }
+
+  .text h2,
+  .text h3 {
+    font-size: 4em;
+  }
+
+  .text p {
+    font-size: 1.2em;
+  }
 }
+/*--------------------*/
+@media (min-width: 1025px) {
+  #myVideo,
+  .formobile {
+    display: none;
+  }
+
+  .showcase video {
+    display: block;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  .showcase,
+  .showcase header {
+    padding: 30px 40px;
+  }
+
+  .text p {
+    font-size: 1.3em;
+  }
+}
+/*--------------------*/
